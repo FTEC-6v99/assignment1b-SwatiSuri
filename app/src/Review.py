@@ -9,3 +9,17 @@
 # rating provided was not between 1 and 5
 #
 # Use typing module to hint the class attributes
+class review():
+    def __init__(self, restaurant : str, review_body: str, review_title: str, rating: int):
+        self.restaurant = restaurant 
+        self.review_body = review_body
+        self.review_title = review_title
+        if (rating < 1 or rating > 5):
+           raise ValueError(
+               "Oops! Now close your eyes and pick a no. between 1 and 5"
+           ) 
+
+    def getrestaurant(self):
+        return self.restaurant
+    def getratings(self):
+        return self.rating

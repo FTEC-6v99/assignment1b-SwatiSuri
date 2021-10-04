@@ -7,3 +7,14 @@
 # for reference on exceptions, check the class notes here: https://github.com/FTEC-6v99/python-overview/blob/master/advanced/exceptions.py
 #
 # Make sure that you add type hints to the function paramter and return value
+from Review import review
+
+def cal_avg_rating (reviews: list[review]) -> float:
+    if review == {}:
+        return 0.0
+    total_ratings = 0.0
+    for review in reviews:
+        total_ratings  += review.getratings()
+    if (len(reviews) >0):
+        total_ratings = total_ratings/len(reviews)
+        return round (total, 2) 
